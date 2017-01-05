@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres 
+  password: password
+  host: localhost
+
+
+development:
+  <<: *default
+  database: quips_development
+
+test:
+  <<: *default
+  database: quips_test
+
+production:
+  <<: *default
+  database: quips_production
+  

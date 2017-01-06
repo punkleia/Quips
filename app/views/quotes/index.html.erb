@@ -1,37 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Quips</title>
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <header>
-    <div class="col-xs-3">
-      <%= link_to root_path, class: "logo" do %>
-        <div class="circle">
-          <br />
-          LEGENDARY
-          <br />
-          yet
-          <br />
-          HUMAN
-        </div>
-      <% end %>
-    </div>
-    <div class="col-xs-4 slogan">
-      Go forth and conquer<br />
-      or stay home and chill
-    </div>
-    <div class="col-xs-5 links">
-    <%= link_to 'Contribute', new_quote_path %>
-    <%= link_to 'About', '#' %>
-    </div>
-  </header>
-  <hr />
-  <br class="clear" />
-
 <h1><%= @quote.saying %></h1>
 <h2><%= @quote.author %></h2>
 <h3><%= @quote.source %></h3>
@@ -45,17 +11,7 @@
   <%= yield %>  
 </div>
 
-<div class="footer">
-  <div class="container">
-    <div class="col-xs-6">
-      <%= link_to "Another, please.", root_path, class: 'next-quote' %>
-    </div>
-    <div class="col-xs-6 footer-blurb">
-      Created, collected, and curated by Michelle J. Luby 
-    </div>
-   </div>
 
-</body>
-</html>
+
 
 

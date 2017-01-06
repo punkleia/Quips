@@ -14,19 +14,20 @@
           <br />
           LEGENDARY
           <br />
-          and
+          &amp;
           <br />
           HUMAN
         </div>
       <% end %>
     </div>
-    <div class="col-xs-4 slogan">
+    <div class="col-xs-4 hidden-xs slogan">
       Go forth and conquer<br />
       or stay home and chill
     </div>
-    <div class="col-xs-5 links">
+    <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
     <!-- Button trigger modal -->
     <%= link_to "Contribute", "#", data: {toggle: "modal", target: "#myModal"} %>
+    &nbsp;&nbsp;
     <%= link_to 'About', about_path %>
     </div>
   </header>
@@ -43,9 +44,11 @@
       </div>
       <%= simple_form_for Quote.new do |f| %>
       <div class="modal-body">
-          <%= f.input :saying %>
-          <%= f.input :author %>
-          <%= f.input :source %>
+          <%= f.input :saying, label: "What is the quote you would like to add?", placeholder: "No power in the 'verse can stop me." %>
+          <br />
+          <%= f.input :author, label: "Who is the author of this quote?", placeholder: "Kaylee Frye (Joss Whedon)" %>
+          <br />
+          <%= f.input :source, label: "Cite your sources; where was this published?", placeholder: "Firefly" %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -56,7 +59,7 @@
   </div>
 </div>
 
-  <br class="clear" />
+<br class="clear" />
 
 <div class="container">
   <%= yield %>
@@ -64,10 +67,10 @@
 
 <div class="footer">
   <div class="container">
-    <div class="col-xs-6">
+    <div class="col-xs-12 col-sm-6">
       <%= link_to "Another, please.", root_path, class: 'next-quote' %>
     </div>
-    <div class="col-xs-6 footer-blurb">
+    <div class="col-xs-12 col-sm-6 footer-blurb">
       Created, collected, and curated by Michelle J. Luby 
     </div>
   </div>

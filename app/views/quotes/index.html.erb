@@ -1,6 +1,18 @@
+<h2>
+  <span>Moxie / No. <%= @quote.id %></span>
+  Empathy and encouragement by the (mostly) greats
+</h2>
+
 <h1><%= @quote.saying %></h1>
-<h2><%= @quote.author %></h2>
-<h3><%= @quote.source %></h3>
+<div class="pull-right">
+  <h2><%= @quote.author %></h2>
+  <h3><%= @quote.source %></h3>
+</div>
+
+<br class="clear" />
+<br />
+<br />
+<br />
 
 <div class="container">
   <% if flash[:error].present? %>
@@ -10,8 +22,3 @@
   <% end %>
   <%= yield %>  
 </div>
-
-
-
-
-

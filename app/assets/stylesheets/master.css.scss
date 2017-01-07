@@ -8,20 +8,19 @@
 .row {
   border-top: 9px solid #222222;
   border-bottom: 9px solid #222222;
-  height: relative
+  height: relative;
 }
 
 .textlogo {
   margin-top: 10px;
   margin-bottom: 10px;
-  position: relative;
 }
 
 .slogan {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style: italic;
   padding-top: 26px;
-  text-align: center;
+  position: center;  
 }
 
 .links {

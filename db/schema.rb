@@ -11,18 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170105024331) do
+ActiveRecord::Schema.define(version: 20170107220426) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "mjquotes", force: true do |t|
-    t.string   "saying"
-    t.string   "author"
-    t.string   "source"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "quotes", force: true do |t|
     t.string   "saying"

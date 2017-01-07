@@ -5,26 +5,6 @@
   clear:both;
 }
 
-.circle {
-    font-weight:bold;
-    font-style: italic;
-    position: relative;
-    border-radius: 100%;
-    background: #A80742;
-    border: 1px solid #A80742;
-    width: 80px;
-    height: 80px;
-    margin: 10px 10px;
-    text-align: center;
-    color: #FFF;
-    font-size: 10px;
-    line-height: 16px;
-    cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
-}
-
 .slogan {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style: italic;
@@ -73,7 +53,7 @@ h3 {
 }
 
 .next-quote {
-  color: #A80742;
+  color: #8a0a0a;
   font-family: "sinanova-regularregular", serif;
   font-size: 20px;
 }
@@ -105,14 +85,21 @@ footer {
 }
 
 h2 span {
-  color: #9C959B;
+  color: #9a9a9a;
   font-family: "sinanova-regularregular", serif;
 }
 
 ::selection {
-  background-color: #9C959B;
+  background-color: #8a0a0a;
 }
 
 .github {
   color: black;
+}
+
+.textlogo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 6px;
+  position: relative;
 }

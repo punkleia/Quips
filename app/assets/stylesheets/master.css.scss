@@ -14,8 +14,8 @@
 
 .links {
   padding-top: 26px;
-  position: right;
-}
+  position: relative;
+ }
 
 .links a {
   color: black;
@@ -32,6 +32,8 @@ a:hover {
 
 header {
   border-top: 9px solid #222222;
+  height: 115px;
+  border-bottom: 9px solid #222222;
 }
 
 hr {
